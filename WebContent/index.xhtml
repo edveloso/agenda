@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>
+		<h:outputText value="Aula JSF 2.0" />
+	</h1>
+    <br/>
+    
+    <!-- Sempre que tiver um botão ou link deve haver um h:form -->
+    <h:form>
+       
+       <h:panelGrid  columns="2">
+          <h:outputLabel value="Nome" for="nome" />
+          <h:inputText value="#{agMB.pessoa.nome}" id="nome" size="80" />
+          
+          <h:outputLabel value="Telefone" for="telefone" />
+          <h:inputText value="#{agMB.pessoa.telefone}" id="telefone" size="80" />
+          
+          <h:outputLabel value="Email" for="email" />
+          <h:inputText value="#{agMB.pessoa.email}" id="email" size="80" />
+          
+          <h:commandButton action="#{agMB.salvar()}" value="Gravar" />
+          
+       </h:panelGrid>
+    
+    
+    </h:form>
+    
+    
+
+
+</body>
+</html>
+
+
+
+
